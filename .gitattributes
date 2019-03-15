@@ -1,0 +1,4 @@
+.gitattributes text=auto
+.gitignore text=auto
+*.md text=auto
+*.txt text=auto

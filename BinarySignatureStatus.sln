@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySignatureStatus", "src\BinarySignatureStatus.csproj", "{D207E37F-EF89-4C38-B93B-DE062837FF3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D207E37F-EF89-4C38-B93B-DE062837FF3B}.Debug|x64.ActiveCfg = Debug|x64
+		{D207E37F-EF89-4C38-B93B-DE062837FF3B}.Debug|x64.Build.0 = Debug|x64
+		{D207E37F-EF89-4C38-B93B-DE062837FF3B}.Release|x64.ActiveCfg = Release|x64
+		{D207E37F-EF89-4C38-B93B-DE062837FF3B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F293C252-0520-4142-8D13-6FE33590C7E0}
+	EndGlobalSection
+EndGlobal

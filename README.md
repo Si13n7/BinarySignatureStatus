@@ -26,17 +26,9 @@ BinarySignatureStatus.exe file1 file2 ...
 - [Microsoft Visual Studio 2019 + .NET Framework 4.7.2 SDK](https://www.visualstudio.com/downloads/)
 - [Si13n7 Dev.™ CSharp Library Binaries](https://github.com/Si13n7/SilDev.CSharpLib/)
 
-<<<<<<< HEAD
 ## Would you like to help?
 
 - [Star this Project](https://github.com/Si13n7/BinarySignatureStatus/stargazers) :star: and show me that this project interests you :hugs:
 - [Open an Issue](https://github.com/Si13n7/BinarySignatureStatus/issues/new) :coffee: to give me your feedback and tell me your ideas and wishes for the future :sunglasses:
 - [Open a Ticket](https://support.si13n7.de/) :mailbox: if you don't have a GitHub account, you can contact me directly on my website :wink:
 - [Donate by PayPal](http://donate.si13n7.com/) :money_with_wings: to buy me some cookies :cookie:
-=======
-***
-
-Would you like to help support this project? [Donate by PayPal](https://donate.si13n7.com/); [Report a Problem](https://support.si13n7.de/) or [Open an Issue](https://github.com/Si13n7/BinarySignatureStatus/issues/new)!
-
-If you need help or if you have any questions, please feel free to [Contact Me](https://support.si13n7.de/)!
->>>>>>> 632ab14f0df960894447bf802762d60993775224

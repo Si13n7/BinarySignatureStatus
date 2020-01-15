@@ -4,6 +4,7 @@
     using System.IO;
     using Properties;
     using SilDev;
+    using SilDev.Compression;
 
     public class Program
     {
@@ -48,7 +49,7 @@
                     if (!string.IsNullOrWhiteSpace(status))
                         WriteInnerLine(status, "Status", status.ContainsEx("Unknown", "Error") ? ErrorCaptionFgColor : status.ContainsEx("NotSigned") ? WarnCaptionFgColor : DefaultCaptionFgColor);
                 }
-                catch (Exception ex)
+                catch (Exception ex) when (ex.IsCaught())
                 {
                     WriteInnerLine(ex.Message, "Error", ErrorCaptionFgColor);
                 }
@@ -61,7 +62,7 @@
             Console.Title = AssemblyInfo.Title;
             var longTitle = $"{Console.Title} v{AssemblyInfo.Version}";
             SetColors(ConsoleColor.DarkCyan);
-            Console.WriteLine(Resources.Logo.UnzipText());
+            Console.WriteLine(GZip.DecompressText(Resources.Logo));
             SetColors(ConsoleColor.DarkGray);
             for (var i = longTitle.Length / 2; i < 25; i++)
                 Console.Write(@" ");
@@ -92,7 +93,7 @@
                 Console.BackgroundColor = bgColor;
         }
 
-        private static void WriteInnerLine(string message = default(string), string caption = default(string), ConsoleColor captionFgColor = DefaultFgColor, ConsoleColor captionBgColor = DefaultBgColor)
+        private static void WriteInnerLine(string message = default, string caption = default, ConsoleColor captionFgColor = DefaultFgColor, ConsoleColor captionBgColor = DefaultBgColor)
         {
             if (string.IsNullOrWhiteSpace(message))
             {
